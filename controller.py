@@ -1,6 +1,7 @@
 import subprocess
 from tkinter import filedialog as fd
 from tkinter.messagebox import showinfo
+import view
 
 class Controller:
 
@@ -17,13 +18,10 @@ class Controller:
 
         filename = fd.askdirectory(
             title='Open a file',
-            initialdir='/')
+            initialdir='/home/jakubkajzer/Desktop')
 
         showinfo(
             title='Selected File',
             message=filename
         )
-
-
-
-Controller.check_changes()
+        view.View.change_entry1(filename)
