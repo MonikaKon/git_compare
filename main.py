@@ -1,7 +1,7 @@
-from view import View
-from controller import Controller
+import view
+import controller
 
 
 if __name__== "__main__":
-    main_contorller = Controller()
-    main_view = View()
+    main_contorller = controller.Controller()
+    main_view = view.View()
