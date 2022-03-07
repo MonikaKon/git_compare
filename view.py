@@ -20,7 +20,8 @@ class View():
         View.root.resizable(False, False)
         View.root.geometry('350x150')
 
-        edit_button = Button(View.root, text = "Edit", command= partial(View_Edit_Window, View.root))
+        edit_button = Button(View.root, text = "Edit", 
+                    command= partial(View_Edit_Window, View.root))
 
         edit_button.grid(row = 0, column = 0)
 

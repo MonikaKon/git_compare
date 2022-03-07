@@ -12,8 +12,8 @@ class Controller:
         return result.stdout
 
     def change_entry1(chosen_path):
-        view_edit_window.View_Edit_Window.edit_window.entry1.delete(0,1000)
-        view_edit_window.View_Edit_Window.edit_window.entry1.insert(0, chosen_path)    
+        view_edit_window.View_Edit_Window.entry1.delete(0,1000)
+        view_edit_window.View_Edit_Window.entry1.insert(0, chosen_path)    
 
     def select_file():
         filetypes = (
@@ -30,5 +30,5 @@ class Controller:
             message=filename
         )
         
-        view_edit_window.View_Edit_Window.change_entry1(filename)
+        Controller.change_entry1(filename)
 
