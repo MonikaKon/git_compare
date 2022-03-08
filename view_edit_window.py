@@ -25,7 +25,6 @@ class View_Edit_Window():
 
         chosen_file = StringVar()
         chosen_file = "Please, open file"
-
         open_button.grid(row = 0, column = 0)
         
         View_Edit_Window.entry1=tk.Entry(View_Edit_Window.edit_window)       
